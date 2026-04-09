@@ -734,10 +734,3 @@ footer {
   content: "COMING SOON";
   color: #ffd54a;
 }
-
-.viewer-box {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-}

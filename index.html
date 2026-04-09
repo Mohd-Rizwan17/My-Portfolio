@@ -8,11 +8,6 @@
 
   <body oncontextmenu="return false;">
     <header>
-      <div class="viewer-box">
-        <span>👁️</span>
-        <span id="viewCount">0</span>
-      </div>
-
       <h1>Mohd<span style="color: red">Rizwan</span></h1>
       <nav>
         <a href="#home"><span>Home</span></a>
@@ -353,15 +348,6 @@
           link.classList.add("available");
         }
       });
-      const namespace = "rizwan-portfolio";
-      const key = "visits";
-
-      fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-        .then((res) => res.json())
-        .then((data) => {
-          document.getElementById("viewCount").innerText = data.value;
-        })
-        .catch((err) => console.log(err));
 
       document.querySelectorAll("nav a").forEach((link) => {
         link.addEventListener("click", function (e) {
